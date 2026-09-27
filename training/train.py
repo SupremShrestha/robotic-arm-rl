@@ -42,12 +42,12 @@ def main():
         n_epochs=10,
     )
 
-    print("Starting training run (300,000 timesteps) with deterministic eval callback...\n")
-    model.learn(total_timesteps=300_000, callback=eval_callback)
+    print("Starting training run (500,000 timesteps) with random targets...\n")
+    model.learn(total_timesteps=500_000, callback=eval_callback)
 
-    model.save("models/ppo_reach_fixed_target")
+    model.save("models/ppo_reach_random_target")
     print("\nTraining complete.")
-    print("Final model: models/ppo_reach_fixed_target.zip")
+    print("Final model: models/ppo_reach_random_target.zip")
     print("Best deterministic-eval model: models/best_model/best_model.zip")
 
     vec_env.close()

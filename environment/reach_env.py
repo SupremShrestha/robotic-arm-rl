@@ -60,7 +60,7 @@ class ReachEnv(gym.Env):
             physicsClientId=self.physics_client,
         )
 
-        self.target_position = np.array([0.4, 0.3, 0.6])
+        self.target_position = self._sample_random_target()
         visual_shape_id = p.createVisualShape(
             shapeType=p.GEOM_SPHERE, radius=0.03, rgbaColor=(1, 0, 0, 1),
             physicsClientId=self.physics_client,
@@ -152,6 +152,18 @@ class ReachEnv(gym.Env):
         end_effector_position = np.array(link_state[0])
         distance = np.linalg.norm(end_effector_position - self.target_position)
         return distance
+    
+    def _sample_random_target(self):
+        """
+        Samples a random reachable point in front of the arm.
+        KUKA iiwa's max reach is ~0.8m; we stay well inside that with margin
+        for the arm's own geometry, and keep the target above the ground
+        plane and generally in front of the arm's base.
+        """
+        x = np.random.uniform(0.3, 0.6)
+        y = np.random.uniform(-0.4, 0.4)
+        z = np.random.uniform(0.3, 0.7)
+        return np.array([x, y, z])
 
     def close(self):
         if p.isConnected(physicsClientId=self.physics_client):
