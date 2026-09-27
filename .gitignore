@@ -1,0 +1,19 @@
+# Virtual Environments
+venv/
+.venv/
+env/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+
+# Model Weights & Logs
+*.pth
+*.onnx
+runs/
+logs/
+wandb/
+
+# IDE settings
+.vscode/
+.idea/
