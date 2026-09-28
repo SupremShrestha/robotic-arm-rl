@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Train PPO (module)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "training.train",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Evaluate trained policy",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/test_trained_policy.py",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    }
+  ]
+}
