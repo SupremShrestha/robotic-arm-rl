@@ -2,30 +2,29 @@
 import os
 
 import torch
-from stable_baselines3 import PPO, SAC
+from stable_baselines3 import PPO
 from stable_baselines3.common.callbacks import EvalCallback
 from stable_baselines3.common.env_util import make_vec_env
 
-from environment.reach_env import ReachEnv
+from environment.reach_avoid_env import ReachAvoidEnv
 
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--algo", choices=["ppo", "sac"], default="ppo")
     parser.add_argument("--obs", choices=["basic", "relvec"], default="relvec")
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--steps", type=int, default=500_000)
     args = parser.parse_args()
 
-    torch.set_num_threads(1)  # lets several runs share the CPU without fighting
+    torch.set_num_threads(1)
 
-    name = f"{args.algo}_{args.obs}_s{args.seed}"
+    name = f"avoid_{args.obs}_s{args.seed}"
     run_dir = os.path.join("models", "runs", name)
     os.makedirs(run_dir, exist_ok=True)
 
     env_kwargs = {"obs_mode": args.obs}
-    vec_env = make_vec_env(ReachEnv, n_envs=1, seed=args.seed, env_kwargs=env_kwargs)
-    eval_env = make_vec_env(ReachEnv, n_envs=1, seed=args.seed + 1000, env_kwargs=env_kwargs)
+    vec_env = make_vec_env(ReachAvoidEnv, n_envs=1, seed=args.seed, env_kwargs=env_kwargs)
+    eval_env = make_vec_env(ReachAvoidEnv, n_envs=1, seed=args.seed + 1000, env_kwargs=env_kwargs)
 
     eval_callback = EvalCallback(
         eval_env,
@@ -37,11 +36,8 @@ def main():
         render=False,
     )
 
-    if args.algo == "ppo":
-        model = PPO("MlpPolicy", vec_env, verbose=1, n_steps=2048,
-                    batch_size=64, n_epochs=10, seed=args.seed)
-    else:
-        model = SAC("MlpPolicy", vec_env, verbose=1, seed=args.seed)
+    model = PPO("MlpPolicy", vec_env, verbose=1, n_steps=2048,
+                batch_size=64, n_epochs=10, seed=args.seed)
 
     print(f"Run {name}: {args.steps} steps")
     model.learn(total_timesteps=args.steps, callback=eval_callback)
