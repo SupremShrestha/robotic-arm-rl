@@ -1,20 +1,20 @@
 ﻿import argparse
 
 import numpy as np
-from stable_baselines3 import PPO, SAC
+from stable_baselines3 import PPO
 
 from environment.reach_avoid_env import ReachAvoidEnv
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--model", default="models/runs/avoid_relvec_s0/best_model")
-parser.add_argument("--algo", choices=["ppo", "sac"], default="ppo")
 parser.add_argument("--obs", choices=["basic", "relvec"], default="relvec")
+parser.add_argument("--threshold", type=float, default=0.05)
 parser.add_argument("--episodes", type=int, default=100)
 parser.add_argument("--seed", type=int, default=12345)
 args = parser.parse_args()
 
-env = ReachAvoidEnv(render_mode=None, obs_mode=args.obs)
-model = (PPO if args.algo == "ppo" else SAC).load(args.model)
+env = ReachAvoidEnv(render_mode=None, obs_mode=args.obs, success_threshold=args.threshold)
+model = PPO.load(args.model)
 
 successes = 0
 collisions = 0

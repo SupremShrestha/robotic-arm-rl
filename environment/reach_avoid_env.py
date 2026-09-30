@@ -12,7 +12,7 @@ class ReachAvoidEnv(gym.Env):
     while staying clear of the obstacle.
     """
 
-    def __init__(self, render_mode=None, obs_mode="relvec"):
+    def __init__(self, render_mode=None, obs_mode="relvec", success_threshold=0.05):
         super().__init__()
 
         self.obs_mode = obs_mode
@@ -23,7 +23,7 @@ class ReachAvoidEnv(gym.Env):
 
         self.max_action_delta = 0.05
         self.action_repeat = 5
-        self.success_threshold = 0.05
+        self.success_threshold = success_threshold
         self.success_bonus = 10.0
         self.obstacle_radius = 0.08
         self.collision_penalty = 5.0
