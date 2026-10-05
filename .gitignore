@@ -17,3 +17,5 @@ wandb/
 # IDE settings
 .vscode/
 .idea/
+# Generated evaluation artifacts
+reports/

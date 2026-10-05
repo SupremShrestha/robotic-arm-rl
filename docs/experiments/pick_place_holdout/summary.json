@@ -1,0 +1,43 @@
+{
+  "trials": 54,
+  "seed": 2027,
+  "geometric_scenes": 6,
+  "successes": 54,
+  "success_rate": 1.0,
+  "ground_contact_trials": 0,
+  "scope": "5 cm cubes, 6 seeded geometric scenes by default; mass/friction grid, no obstacles or sensor noise.",
+  "by_friction": {
+    "0.5": {
+      "trials": 18,
+      "successes": 18,
+      "success_rate": 1.0
+    },
+    "1.0": {
+      "trials": 18,
+      "successes": 18,
+      "success_rate": 1.0
+    },
+    "2.0": {
+      "trials": 18,
+      "successes": 18,
+      "success_rate": 1.0
+    }
+  },
+  "by_mass": {
+    "0.04": {
+      "trials": 18,
+      "successes": 18,
+      "success_rate": 1.0
+    },
+    "0.08": {
+      "trials": 18,
+      "successes": 18,
+      "success_rate": 1.0
+    },
+    "0.15": {
+      "trials": 18,
+      "successes": 18,
+      "success_rate": 1.0
+    }
+  }
+}

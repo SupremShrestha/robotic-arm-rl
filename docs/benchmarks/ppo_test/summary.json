@@ -1,0 +1,19 @@
+{
+  "controller": "ppo",
+  "episodes": 200,
+  "seed_start": 0,
+  "successes": 111,
+  "success_rate": 0.555,
+  "success_rate_95pct_wilson": [
+    0.4857317563236392,
+    0.6221951830253456
+  ],
+  "mean_distance_m": 0.2931496621903858,
+  "best_distance_m": 0.044940068544044545,
+  "mean_steps": 131.5,
+  "ground_collision_episodes": 0,
+  "success_threshold_m": 0.05,
+  "reward_mode": "legacy",
+  "model": "models\\best_model\\best_model.zip",
+  "model_sha256": "0081c3ac4a59712b10f88dabc7bc55cf24317fccdd3794254a6d72be876147bf"
+}

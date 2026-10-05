@@ -1,0 +1,19 @@
+{
+  "controller": "ppo",
+  "episodes": 200,
+  "seed_start": 0,
+  "successes": 122,
+  "success_rate": 0.61,
+  "success_rate_95pct_wilson": [
+    0.5409361758928832,
+    0.6749177028050861
+  ],
+  "mean_distance_m": 0.18838795862374674,
+  "best_distance_m": 0.04035634237191271,
+  "mean_steps": 122.235,
+  "ground_collision_episodes": 0,
+  "success_threshold_m": 0.05,
+  "reward_mode": "legacy",
+  "model": "reports\\ablation_full\\shaped_19\\run\\best_model.zip",
+  "model_sha256": "ec535b8275bebb2bb4b2fd192aebadca8214baff88aa4c5e90849f2e60178d7e"
+}

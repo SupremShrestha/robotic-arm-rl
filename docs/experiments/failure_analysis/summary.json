@@ -1,0 +1,42 @@
+{
+  "episodes": 200,
+  "failures": 65,
+  "failed_with_ground_contact": 0,
+  "by_height": {
+    "z_below_0.5": {
+      "episodes": 97,
+      "success_rate": 0.6185567010309279
+    },
+    "z_at_least_0.5": {
+      "episodes": 103,
+      "success_rate": 0.7281553398058253
+    }
+  },
+  "diagnostics": {
+    "action_saturation_fraction": {
+      "successful": 1.0,
+      "failed": 1.0
+    },
+    "joint_limit_fraction": {
+      "successful": 0.019514658919538828,
+      "failed": 0.505
+    },
+    "stationary_distance_fraction": {
+      "successful": 0.0012218751676116018,
+      "failed": 0.01476923076923077
+    }
+  },
+  "interpretation": "These are observed associations, not proof of a causal explanation.",
+  "worst_episode_seeds": [
+    1067,
+    1069,
+    1075,
+    1096,
+    1080,
+    1106,
+    1063,
+    1146,
+    1029,
+    1081
+  ]
+}

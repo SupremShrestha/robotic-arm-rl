@@ -1,0 +1,73 @@
+{
+  "design": {
+    "requested_additional_steps": 100000,
+    "training_seeds": [
+      7,
+      19,
+      42
+    ],
+    "evaluation_episodes_per_set": 200,
+    "test_seed_start": 0,
+    "holdout_seed_start": 1000,
+    "validation_seed_start": 10000,
+    "initial_checkpoint": "models\\best_model\\best_model.zip",
+    "initial_sha256": "0081c3ac4a59712b10f88dabc7bc55cf24317fccdd3794254a6d72be876147bf",
+    "design": "Paired continuation seeds, identical starting checkpoint and step budgets; not independent training from scratch."
+  },
+  "conditions": {
+    "legacy": {
+      "test": {
+        "mean_success_rate": 0.7533333333333333,
+        "sample_std_across_training_seeds": 0.09411871935663665,
+        "per_seed": {
+          "7": 0.645,
+          "19": 0.815,
+          "42": 0.8
+        }
+      },
+      "holdout": {
+        "mean_success_rate": 0.7066666666666667,
+        "sample_std_across_training_seeds": 0.10563301251660552,
+        "per_seed": {
+          "7": 0.585,
+          "19": 0.76,
+          "42": 0.775
+        }
+      }
+    },
+    "shaped": {
+      "test": {
+        "mean_success_rate": 0.6133333333333334,
+        "sample_std_across_training_seeds": 0.060069404303133664,
+        "per_seed": {
+          "7": 0.555,
+          "19": 0.61,
+          "42": 0.675
+        }
+      },
+      "holdout": {
+        "mean_success_rate": 0.5766666666666668,
+        "sample_std_across_training_seeds": 0.089489291724392,
+        "per_seed": {
+          "7": 0.5,
+          "19": 0.555,
+          "42": 0.675
+        }
+      }
+    }
+  },
+  "paired_holdout_difference_shaped_minus_legacy": [
+    {
+      "seed": 7,
+      "difference": -0.08499999999999996
+    },
+    {
+      "seed": 19,
+      "difference": -0.20499999999999996
+    },
+    {
+      "seed": 42,
+      "difference": -0.09999999999999998
+    }
+  ]
+}
