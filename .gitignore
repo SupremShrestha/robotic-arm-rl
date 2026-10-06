@@ -1,21 +1,16 @@
-# Virtual Environments
-venv/
+# Local Python environment
 .venv/
+venv/
 env/
 
-# Python Cache
+# Generated runtime files
 __pycache__/
 *.py[cod]
+outputs/
+*.egg-info/
+build/
+dist/
 
-# Model Weights & Logs
-*.pth
-*.onnx
-runs/
-logs/
-wandb/
-
-# IDE settings
+# Editor settings
 .vscode/
 .idea/
-# Generated evaluation artifacts
-reports/

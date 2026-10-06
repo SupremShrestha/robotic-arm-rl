@@ -1,0 +1,134 @@
+{
+  "model": "outputs\\shared_yaw_simulation_policy\\candidate.zip",
+  "sha256": "8d40cec520ed6a433d0ef737187a84488a9e07a7e10bf4008917ce9ef1a89809",
+  "environment_profile": "yaw_aligned_v3",
+  "observation_schema": 32,
+  "max_episode_steps": 500,
+  "extended_suite": true,
+  "varied_layouts": true,
+  "seed": 54000,
+  "cases": {
+    "reference": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.008420332668299392
+    },
+    "light": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.011930743911569768
+    },
+    "heavy": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.00935745164490482
+    },
+    "slippery": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.010473849377375666
+    },
+    "small": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.01509321996501618
+    },
+    "large": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.008640691376009637
+    },
+    "cylinder": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.010498474542826906
+    },
+    "low_obstacle": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.0061239809657683475
+    },
+    "blocking_obstacle": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.008330609111845674
+    },
+    "heavy_slippery": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.007862206797768027
+    },
+    "large_blocking_obstacle": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.009190961046988766
+    },
+    "cylinder_blocking_obstacle": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.014968584658109435
+    },
+    "wide_left": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.010061277721175823
+    },
+    "wide_right": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.012015021023426251
+    },
+    "rotated_small_box": {
+      "episodes": 2,
+      "successes": 1,
+      "collision_free_successes": 1,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.062317843690360114
+    },
+    "rotated_large_box": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.009504956396869402
+    },
+    "shifted_obstacle": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.013532716956304435
+    }
+  },
+  "episodes": 34,
+  "successes": 33,
+  "scope": "Finite stress test; paired target seeds across conditions. No camera noise or hardware; two simple upright geometries; obstacle contact is distinct from placement success."
+}

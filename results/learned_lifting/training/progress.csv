@@ -1,0 +1,2 @@
+time/iterations,time/fps,rollout/success_rate,eval/max_held_height_m,time/time_elapsed,rollout/ep_rew_mean,time/total_timesteps,rollout/ep_len_mean,eval/success_rate
+1,311,1.0,0.18,3,71.62152925000001,1024,116.875,1.0

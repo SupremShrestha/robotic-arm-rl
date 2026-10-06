@@ -1,0 +1,24 @@
+{
+  "checkpoint": "models\\panda_obstacle_policy_v2.zip",
+  "sha256": "9315bde0d67d89edb41e2e7324ee686fe0d9bf2d060ccd71bba123646610835c",
+  "method": "behavior cloning and DAgger; no additional PPO",
+  "environment_profile": "quarter_turn_v2",
+  "observation_values": 32,
+  "horizon": 500,
+  "selection": "Round 0; both rounds passed 20/20 validation at seeds 23000-23004; tie keeps earliest checkpoint, before holdout.",
+  "regression": "20/20 seeds 2000-2019, 6 cm box, 24 cm obstacle",
+  "holdout": "50/50 seeds 24000-24049, 6 cm box, 24 cm obstacle",
+  "changes": [
+    "90 degree gripper orientation and matching wrist home",
+    "training teacher releases up to 7 cm above support and opens before withdrawal",
+    "four derived observation predicates added as neural input features"
+  ],
+  "success_contract": "Unchanged: physical grasp/lift, released and settled placement within 5 cm for 10 steps, no obstacle contact.",
+  "evidence": "results\\obstacle_aware_pick_place\\quarter_turn_v2",
+  "limits": "Known single fixed obstacle, upright simple objects in limited workspace; no universal or hardware reliability claim.",
+  "stress": "34/36 seeds 25000-25002 paired across 12 conditions; one obstacle-contact episode",
+  "remaining_failures": [
+    "low_obstacle seed 25002: time limit before placement/release",
+    "cylinder_blocking_obstacle seed 25002: obstacle collision"
+  ]
+}

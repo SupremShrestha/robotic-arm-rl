@@ -1,0 +1,159 @@
+{
+  "model": "outputs\\shared_policy_ppo_experiment\\final_model.zip",
+  "sha256": "d6f4b646b3d822d03768c55a54d7e7f21e9c10f9672345fbc7b99bffc5d54370",
+  "seed": 54000,
+  "persistent_scene": true,
+  "planned_tasks": 3,
+  "successes": 3,
+  "success_rate": 1.0,
+  "all_objects_finally_settled": [
+    true,
+    true,
+    true
+  ],
+  "sequence_success": true,
+  "tasks": [
+    {
+      "task": 1,
+      "is_success": true,
+      "grasped": true,
+      "lifted": true,
+      "released": true,
+      "resting": true,
+      "placement_candidate": true,
+      "placement_error_m": 0.019467203215331255,
+      "reach_distance_m": 0.1503271505685358,
+      "ground_contact": false,
+      "stage": "place",
+      "reward_version": 3,
+      "current_grasp": false,
+      "cube_height_m": 0.02498950182991551,
+      "finger_opening_m": 0.03892912711949554,
+      "obstacle_contact": false,
+      "mass": 0.08,
+      "friction": 2.0,
+      "size": 0.05,
+      "object_shape": "box",
+      "obstacle_height": 0.0,
+      "object_yaw": 0.0,
+      "source_xy": [
+        0.45,
+        -0.1
+      ],
+      "destination_xy": [
+        0.45,
+        0.13
+      ],
+      "obstacle_offset_xy": [
+        0.0,
+        0.0
+      ],
+      "obstacle_half_xy": [
+        0.04,
+        0.04
+      ],
+      "environment_profile": "quarter_turn_v2",
+      "episode_horizon": 500,
+      "max_held_height_m": 0.18,
+      "ground_slide_distance_m": 0.017740865346323433,
+      "sliding_failure": false,
+      "collision_failure": false,
+      "steps": 228
+    },
+    {
+      "task": 2,
+      "is_success": true,
+      "grasped": true,
+      "lifted": true,
+      "released": true,
+      "resting": true,
+      "placement_candidate": true,
+      "placement_error_m": 0.01945691878618577,
+      "reach_distance_m": 0.15326177618361375,
+      "ground_contact": false,
+      "stage": "place",
+      "reward_version": 3,
+      "current_grasp": false,
+      "cube_height_m": 0.02498960211979829,
+      "finger_opening_m": 0.038872990641011934,
+      "obstacle_contact": false,
+      "mass": 0.08,
+      "friction": 2.0,
+      "size": 0.05,
+      "object_shape": "box",
+      "obstacle_height": 0.0,
+      "object_yaw": 0.0,
+      "source_xy": [
+        0.51,
+        -0.18
+      ],
+      "destination_xy": [
+        0.39,
+        0.20157568056677827
+      ],
+      "obstacle_offset_xy": [
+        0.0,
+        0.0
+      ],
+      "obstacle_half_xy": [
+        0.04,
+        0.04
+      ],
+      "environment_profile": "quarter_turn_v2",
+      "episode_horizon": 500,
+      "max_held_height_m": 0.18,
+      "ground_slide_distance_m": 0.0015336677227638352,
+      "sliding_failure": false,
+      "collision_failure": false,
+      "steps": 199
+    },
+    {
+      "task": 3,
+      "is_success": true,
+      "grasped": true,
+      "lifted": true,
+      "released": true,
+      "resting": true,
+      "placement_candidate": true,
+      "placement_error_m": 0.019315496426594532,
+      "reach_distance_m": 0.1570777108814474,
+      "ground_contact": false,
+      "stage": "place",
+      "reward_version": 3,
+      "current_grasp": false,
+      "cube_height_m": 0.024989505480060768,
+      "finger_opening_m": 0.038922434656726256,
+      "obstacle_contact": false,
+      "mass": 0.08,
+      "friction": 2.0,
+      "size": 0.05,
+      "object_shape": "box",
+      "obstacle_height": 0.0,
+      "object_yaw": 0.0,
+      "source_xy": [
+        0.3,
+        -0.3
+      ],
+      "destination_xy": [
+        0.55,
+        0.3
+      ],
+      "obstacle_offset_xy": [
+        0.0,
+        0.0
+      ],
+      "obstacle_half_xy": [
+        0.04,
+        0.04
+      ],
+      "environment_profile": "quarter_turn_v2",
+      "episode_horizon": 500,
+      "max_held_height_m": 0.18,
+      "ground_slide_distance_m": 0.0005575611530304943,
+      "sliding_failure": false,
+      "collision_failure": false,
+      "steps": 259
+    }
+  ],
+  "limits": "Other objects are physical but absent from the policy observation; collisions with them are not explicitly penalized. No obstacle or orientation generalization claim."
+}

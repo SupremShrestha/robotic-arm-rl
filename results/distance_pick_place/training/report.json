@@ -1,0 +1,38 @@
+{
+  "method": "focused behavior cloning/DAgger; no additional PPO",
+  "source": "models\\panda_diagonal_policy.zip",
+  "history": [
+    {
+      "round": 0,
+      "loss": 3.814243245869875e-05,
+      "successes_out_of_5": {
+        "distance_1": 5,
+        "distance_2": 5,
+        "distance_3": 5,
+        "diagonal": 5
+      },
+      "samples": 20720
+    }
+  ],
+  "validation_seeds": [
+    44000,
+    44004
+  ],
+  "config": {
+    "model": "models\\panda_diagonal_policy.zip",
+    "dataset": "results\\diagonal_pick_place\\training\\demonstrations.npz",
+    "output": "outputs\\distance_grasp_refinement",
+    "epochs": 100,
+    "random_layouts": false,
+    "distance_tasks": true,
+    "rounds": 1,
+    "demonstrations": 10,
+    "quarter_turn": true,
+    "varied_scenes": false,
+    "align_yaw": false,
+    "phase_features": false,
+    "fresh_dataset": true,
+    "training_seed": 43000,
+    "validation_seed": 44000
+  }
+}

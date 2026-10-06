@@ -1,0 +1,11 @@
+{
+  "method": "Paired comparison, intermediate imitation policy versus 10240-step PPO continuation",
+  "imitation_stress": "33/34",
+  "ppo_stress": "32/34",
+  "imitation_diagonal": "20/20",
+  "ppo_diagonal": "20/20",
+  "imitation_diagonal_error_m": 0.011086526826571715,
+  "ppo_diagonal_error_m": 0.018524615974009874,
+  "selection": "Reject PPO continuation as improvement; recommend final separately refined imitation checkpoint, tested at new seeds 56000-56019",
+  "limits": "Single PPO seed and bounded short run; no general claim about PPO."
+}

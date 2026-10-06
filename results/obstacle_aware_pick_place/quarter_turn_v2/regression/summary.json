@@ -1,0 +1,27 @@
+{
+  "controller": "ppo_panda",
+  "stage": "place",
+  "episodes": 20,
+  "seed": 2000,
+  "environment_profile": "quarter_turn_v2",
+  "observation_schema": 32,
+  "max_episode_steps": 500,
+  "scene_options": {
+    "size": 0.06,
+    "obstacle_height": 0.24
+  },
+  "domain_randomization": false,
+  "randomized_positions": true,
+  "start_near_cube": false,
+  "reward_version": 3,
+  "model": "outputs\\pick_place_quarter_turn_v2\\round_0.zip",
+  "model_sha256": "9315bde0d67d89edb41e2e7324ee686fe0d9bf2d060ccd71bba123646610835c",
+  "successes": 20,
+  "success_rate": 1.0,
+  "collision_free_success_rate": 1.0,
+  "obstacle_contact_episodes": 0,
+  "grasp_rate": 1.0,
+  "lift_rate": 1.0,
+  "release_rate": 1.0,
+  "mean_placement_error_m": 0.010170362625952716
+}

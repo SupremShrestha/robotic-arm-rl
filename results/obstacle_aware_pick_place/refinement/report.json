@@ -1,0 +1,32 @@
+{
+  "method": "focused behavior cloning/DAgger; no additional PPO",
+  "source": "outputs\\pick_place_obstacle_aware\\best_model.zip",
+  "history": [
+    {
+      "round": 0,
+      "loss": 0.00059040158521384,
+      "successes_out_of_5": {
+        "reference": 4,
+        "large": 5,
+        "tall": 4,
+        "large_tall": 4
+      },
+      "samples": 45852
+    },
+    {
+      "round": 1,
+      "loss": 0.0034208428114652634,
+      "successes_out_of_5": {
+        "reference": 5,
+        "large": 5,
+        "tall": 3,
+        "large_tall": 5
+      },
+      "samples": 66626
+    }
+  ],
+  "validation_seeds": [
+    21000,
+    21004
+  ]
+}

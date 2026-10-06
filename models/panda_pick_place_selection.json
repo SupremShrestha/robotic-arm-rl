@@ -1,0 +1,16 @@
+{
+  "method": "behavior cloning + DAgger + PPO fine-tuning",
+  "stage": "place",
+  "reward_version": 3,
+  "checkpoint": "models/panda_pick_place_policy.zip",
+  "sha256": "c7881804ad4a6643f25ba0e00e51af0f5525cb2525f1ec6d60114ef6e54c2f38",
+  "start_near_cube": false,
+  "demonstrations": 20,
+  "supervised_epochs_per_round": 150,
+  "dagger_rounds": 2,
+  "ppo_steps": 1024,
+  "selection": "Final checkpoint evaluated after training; no held-out tuning",
+  "training_evidence": "results/learned_pick_place/training",
+  "evaluation": "results/learned_pick_place/holdout",
+  "scope": "50 randomized simulated scenes at seeds 5000-5049; fixed 5 cm cube, 0.08 kg mass, friction 2.0; no real-world claim"
+}

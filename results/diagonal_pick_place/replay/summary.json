@@ -1,0 +1,59 @@
+{
+  "controller": "ppo_panda",
+  "stage": "place",
+  "episodes": 3,
+  "seed": 622849,
+  "environment_profile": "quarter_turn_v2",
+  "observation_schema": 32,
+  "max_episode_steps": 500,
+  "three_tasks": true,
+  "random_layouts": true,
+  "task_positions": [
+    [
+      [
+        0.5004507849347752,
+        -0.17852964932900964
+      ],
+      [
+        0.353600127055324,
+        0.16246208810819288
+      ]
+    ],
+    [
+      [
+        0.39271392728252086,
+        -0.17785281793772742
+      ],
+      [
+        0.5456578177408785,
+        0.1681217231888888
+      ]
+    ],
+    [
+      [
+        0.5232567712894529,
+        -0.14340095619013246
+      ],
+      [
+        0.39745506691729626,
+        0.24092986812401998
+      ]
+    ]
+  ],
+  "scene_options": {},
+  "domain_randomization": false,
+  "scene_randomization": false,
+  "randomized_positions": true,
+  "start_near_cube": false,
+  "reward_version": 3,
+  "model": "outputs\\diagonal_grasp_refinement\\best_model.zip",
+  "model_sha256": "d34ac53f7dbd9a681545bb4a445f3b88137e3be8b1490ae3bf40b53483b2306d",
+  "successes": 3,
+  "success_rate": 1.0,
+  "collision_free_success_rate": 1.0,
+  "obstacle_contact_episodes": 0,
+  "grasp_rate": 1.0,
+  "lift_rate": 1.0,
+  "release_rate": 1.0,
+  "mean_placement_error_m": 0.008705320383875406
+}

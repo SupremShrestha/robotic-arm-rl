@@ -1,0 +1,17 @@
+{
+  "method": "behavior cloning; initialized from v2. No additional PPO in selected round 0.",
+  "checkpoint": "models\\panda_varied_scene_policy.zip",
+  "sha256": "05a84888d8814dcdab188bc8c0fb3c12fe63662a9deeb2b246b543c050c046e0",
+  "environment_profile": "quarter_turn_v2",
+  "selection": "Frozen round 0 passed 40/40 validation across eight conditions before holdout.",
+  "training_seeds": "30000-30009",
+  "validation_seeds": "31000-31004 per condition",
+  "holdout_seeds": "32000-32001 paired across 17 conditions",
+  "baseline_successes": 26,
+  "candidate_successes": 32,
+  "episodes": 34,
+  "remaining_failures": "Both 45-degree rotated 6 cm box trials failed; no universal-orientation claim.",
+  "evidence": "results\\scene_generalization",
+  "training_report": "results/scene_generalization/training/report.json",
+  "demonstrations": "results/scene_generalization/training/demonstrations.npz"
+}

@@ -1,0 +1,15 @@
+{
+  "method": "balanced behavior cloning across saved datasets; no PPO",
+  "source": "models\\panda_distance_policy.zip",
+  "datasets": [
+    "results\\scene_generalization\\training\\demonstrations.npz",
+    "results\\diagonal_pick_place\\training\\demonstrations.npz",
+    "results\\distance_pick_place\\training\\demonstrations.npz",
+    "outputs\\persistent_scene_learning\\demonstrations.npz"
+  ],
+  "samples_per_dataset": 6000,
+  "seed": 49000,
+  "epochs": 100,
+  "loss": 0.0016374894184991717,
+  "selection": "Candidate only; requires independent evaluation"
+}

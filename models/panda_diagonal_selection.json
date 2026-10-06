@@ -1,0 +1,13 @@
+{
+  "checkpoint": "models\\panda_diagonal_policy.zip",
+  "sha256": "d34ac53f7dbd9a681545bb4a445f3b88137e3be8b1490ae3bf40b53483b2306d",
+  "method": "Focused behavior cloning initialized from panda_varied_scene_policy; no new PPO or DAgger in selected one-round experiment",
+  "environment_profile": "quarter_turn_v2",
+  "training_seeds": "40000-40024; 25 ordinary and 25 random diagonal demonstrations",
+  "validation": "5/5 ordinary plus 5/5 diagonal at seeds 41000-41004",
+  "replay": "3/3 at seed 622849; previous checkpoint 2/3",
+  "holdout": "20/20 random diagonal scenes at seeds 42000-42019",
+  "mean_holdout_placement_error_m": 0.011166796023222066,
+  "evidence": "results\\diagonal_pick_place",
+  "limits": "Fixed upright 5 cm box, mass .08 kg, friction 2, no obstacle; finite bounded workspace. Other physics, orientation and obstacle performance not established for this checkpoint."
+}

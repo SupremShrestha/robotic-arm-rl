@@ -1,0 +1,16 @@
+{
+  "checkpoint": "models\\panda_simulation_policy.zip",
+  "sha256": "aba0830b49e833ada8687df0e2ae0ad63baa7ad4e9aa73fe48cc2f6e086eb511",
+  "method": "Shared balanced behavior cloning across modern datasets plus size/yaw/obstacle demonstrations; no new PPO in selected checkpoint",
+  "environment_profile": "yaw_aligned_v3",
+  "orientation_assistance": "Low-level IK aligns gripper to known initial simulator object yaw; policy controls Cartesian xyz and finger opening",
+  "results": {
+    "distances": "3/3 exact 23/40/65 cm presets (included in demonstrations)",
+    "persistent": "3/3 fixed objects with all three finally settled; no between-task world/arm reset",
+    "diagonal": "20/20 fresh seeded random diagonals, seeds 56000-56019",
+    "stress": "34/34 at paired seeds 56000-56001 across 17 cases"
+  },
+  "scope": "Known simple upright boxes/cylinders, finite bounded positions, sampled mass/friction/size, one fixed known obstacle; orientation handled using simulator state",
+  "evidence": "results\\shared_simulation_policy",
+  "limits": "No arbitrary tilted objects, multi/moving/unknown-obstacle generalization, camera-based learned perception, universal reliability, or hardware validation."
+}
