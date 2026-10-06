@@ -1,0 +1,17 @@
+{
+  "controller": "ppo_panda",
+  "stage": "place",
+  "episodes": 50,
+  "seed": 5000,
+  "randomized_positions": true,
+  "start_near_cube": false,
+  "reward_version": 3,
+  "model": "outputs\\pick_place_assisted_placement\\final_model.zip",
+  "model_sha256": "c7881804ad4a6643f25ba0e00e51af0f5525cb2525f1ec6d60114ef6e54c2f38",
+  "successes": 50,
+  "success_rate": 1.0,
+  "grasp_rate": 1.0,
+  "lift_rate": 1.0,
+  "release_rate": 1.0,
+  "mean_placement_error_m": 0.0064849431295941826
+}

@@ -1,0 +1,19 @@
+{
+  "timesteps": 10240,
+  "learning_rate": 1e-05,
+  "target_kl": 0.001,
+  "stage": "place",
+  "seed": 42,
+  "fixed_positions": false,
+  "domain_randomization": false,
+  "scene_randomization": false,
+  "random_layouts": true,
+  "obstacle_aware": true,
+  "resume": "outputs\\shared_yaw_simulation_policy\\candidate.zip",
+  "start_near_cube": false,
+  "reset_exploration": false,
+  "output": "outputs\\shared_policy_ppo_experiment",
+  "controller": "ppo_panda",
+  "randomize": true,
+  "reward_version": 3
+}

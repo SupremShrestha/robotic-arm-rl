@@ -1,0 +1,12 @@
+{
+  "checkpoint": "models\\panda_distance_policy.zip",
+  "sha256": "e1345410bc9fb489b113a9cf6df6a87be8d441a44e9979b93f01f18e448c985a",
+  "method": "Focused behavior cloning initialized from diagonal policy; no new PPO",
+  "environment_profile": "quarter_turn_v2",
+  "training": "10 demonstrations per 23/40/65 cm preset and 10 random diagonal scenes, seeds 43000-43009",
+  "validation": "20/20 at seeds 44000-44004, five per condition; fixed preset seeds repeat the same deterministic layouts",
+  "replay": "3/3 at seed 2000 versus previous 2/3; these fixed layouts were included in training",
+  "holdout": "20/20 fresh randomized diagonals at seeds 45000-45019",
+  "evidence": "results\\distance_pick_place",
+  "limits": "Fixed upright 5 cm box, mass .08, friction 2, no obstacles. No arbitrary 65 cm layouts or hardware reliability established."
+}

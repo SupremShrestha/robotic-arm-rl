@@ -1,0 +1,15 @@
+{
+  "requested_additional_steps": 100000,
+  "training_seeds": [
+    7,
+    19,
+    42
+  ],
+  "evaluation_episodes_per_set": 200,
+  "test_seed_start": 0,
+  "holdout_seed_start": 1000,
+  "validation_seed_start": 10000,
+  "initial_checkpoint": "models\\best_model\\best_model.zip",
+  "initial_sha256": "0081c3ac4a59712b10f88dabc7bc55cf24317fccdd3794254a6d72be876147bf",
+  "design": "Paired continuation seeds, identical starting checkpoint and step budgets; not independent training from scratch."
+}

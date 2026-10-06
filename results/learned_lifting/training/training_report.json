@@ -1,0 +1,35 @@
+{
+  "method": "behavior_cloning_dagger_then_ppo",
+  "reward_version": 3,
+  "config": {
+    "output": "outputs\\pick_place_assisted_full_start",
+    "demonstrations": 20,
+    "epochs": 150,
+    "dagger_rounds": 2,
+    "ppo_steps": 1024,
+    "seed": 42,
+    "start_near_cube": false
+  },
+  "teacher_successes": 20,
+  "imitation_history": [
+    {
+      "round": 0,
+      "samples": 2250,
+      "loss": 0.005364992655813694,
+      "validation_success_rate": 0.0
+    },
+    {
+      "round": 1,
+      "samples": 4563,
+      "loss": 0.004878307227045298,
+      "validation_success_rate": 1.0
+    },
+    {
+      "round": 2,
+      "samples": 6849,
+      "loss": 0.0015289206057786942,
+      "validation_success_rate": 1.0
+    }
+  ],
+  "note": "Validation targets are development data, not independent final results."
+}

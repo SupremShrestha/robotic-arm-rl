@@ -1,0 +1,17 @@
+{
+  "controller": "ik",
+  "episodes": 500,
+  "seed_start": 2000,
+  "successes": 500,
+  "success_rate": 1.0,
+  "success_rate_95pct_wilson": [
+    0.9923753814690964,
+    0.9999999999999999
+  ],
+  "mean_distance_m": 0.046338955042490984,
+  "best_distance_m": 0.04240124022625973,
+  "mean_steps": 73.084,
+  "ground_collision_episodes": 0,
+  "success_threshold_m": 0.05,
+  "reward_mode": "legacy"
+}

@@ -1,0 +1,22 @@
+{
+  "method": "behavior cloning and DAgger; PPO trial rejected by validation",
+  "checkpoint": "models/panda_obstacle_policy.zip",
+  "sha256": "a0955be9aaa1cbee7fde35392fb95870b426b5d25d52762a8d9b84fe99818946",
+  "observation_values": 32,
+  "environment_profile": "obstacle_aware_v1",
+  "horizon": 500,
+  "home_joint_positions": [
+    -0.5,
+    -0.4,
+    1.5,
+    -2.0,
+    0.0,
+    1.6,
+    0.8
+  ],
+  "selection": "Refinement round 0 selected by weakest large/tall/large+tall validation condition, then aggregate success; selection before final holdout",
+  "collision_free_successes": 31,
+  "episodes": 36,
+  "evidence": "results/obstacle_aware_pick_place",
+  "limits": "Single known fixed obstacle; remaining large-object and collision failures; no camera perception or hardware validation"
+}

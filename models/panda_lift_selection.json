@@ -1,0 +1,12 @@
+{
+  "method": "behavior cloning + DAgger + PPO fine-tuning",
+  "checkpoint": "models/panda_lift_policy.zip",
+  "sha256": "f11724fe40c844f4dc5a4364610ad9c2dc807b6d925002b3b3b37a631c0fad70",
+  "stage": "lift",
+  "start_near_cube": false,
+  "reward_version": 3,
+  "ppo_steps": 1024,
+  "training_evidence": "results/learned_lifting/training",
+  "final_evaluation": "results/learned_lifting/full_start",
+  "scope": "50 randomized simulated grasp-and-lift trials at seeds 4000-4049; not full placement or universal reliability"
+}

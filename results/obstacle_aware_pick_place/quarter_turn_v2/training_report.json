@@ -1,0 +1,43 @@
+{
+  "method": "focused behavior cloning/DAgger; no additional PPO",
+  "source": "models\\panda_obstacle_policy.zip",
+  "history": [
+    {
+      "round": 0,
+      "loss": 0.00041547187720425427,
+      "successes_out_of_5": {
+        "reference": 5,
+        "large": 5,
+        "tall": 5,
+        "large_tall": 5
+      },
+      "samples": 21160
+    },
+    {
+      "round": 1,
+      "loss": 0.0048833261243999004,
+      "successes_out_of_5": {
+        "reference": 5,
+        "large": 5,
+        "tall": 5,
+        "large_tall": 5
+      },
+      "samples": 42544
+    }
+  ],
+  "validation_seeds": [
+    23000,
+    23004
+  ],
+  "config": {
+    "model": "models\\panda_obstacle_policy.zip",
+    "dataset": "results\\obstacle_aware_pick_place\\initial_training\\demonstrations.npz",
+    "output": "outputs\\pick_place_quarter_turn_v2",
+    "epochs": 100,
+    "quarter_turn": true,
+    "phase_features": true,
+    "fresh_dataset": true,
+    "training_seed": 22000,
+    "validation_seed": 23000
+  }
+}

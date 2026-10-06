@@ -1,0 +1,12 @@
+{"timesteps": 450000, "success_rate": 0.75, "mean_distance_m": 0.1577260508466331, "mean_reward": -28.177086888078144}
+{"timesteps": 460000, "success_rate": 0.7, "mean_distance_m": 0.17744781493245293, "mean_reward": -29.97223013795438}
+{"timesteps": 470000, "success_rate": 0.45, "mean_distance_m": 0.27912541946081315, "mean_reward": -37.974709883433185}
+{"timesteps": 480000, "success_rate": 0.8, "mean_distance_m": 0.11084184410942335, "mean_reward": -25.81289374675606}
+{"timesteps": 490000, "success_rate": 0.7, "mean_distance_m": 0.1073827913167588, "mean_reward": -28.082974933858242}
+{"timesteps": 500000, "success_rate": 0.8, "mean_distance_m": 0.09651095346425756, "mean_reward": -25.274416390574196}
+{"timesteps": 510000, "success_rate": 0.65, "mean_distance_m": 0.1319568696235588, "mean_reward": -31.56850839278213}
+{"timesteps": 520000, "success_rate": 0.3, "mean_distance_m": 0.2275252996732624, "mean_reward": -43.570063852151094}
+{"timesteps": 530000, "success_rate": 0.55, "mean_distance_m": 0.18201700175394928, "mean_reward": -35.50177520935297}
+{"timesteps": 540000, "success_rate": 0.55, "mean_distance_m": 0.2058413958527762, "mean_reward": -36.20618187407881}
+{"timesteps": 550000, "success_rate": 0.55, "mean_distance_m": 0.20284978724927366, "mean_reward": -36.14519080513407}
+{"timesteps": 550352, "success_rate": 0.45, "mean_distance_m": 0.23786689255698815, "mean_reward": -38.53951216957662}

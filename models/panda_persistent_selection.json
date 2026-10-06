@@ -1,0 +1,9 @@
+{
+  "checkpoint": "models\\panda_persistent_policy.zip",
+  "sha256": "0231d8345bd1760afb31ecff9ec0d1a496ff2929a853b5bb9715cec0fac50eed",
+  "method": "behavior cloning; no new PPO",
+  "profile": "quarter_turn_v2",
+  "result": "3/3; all three objects settled at final destinations",
+  "scope": "Fixed three-object scene, fixed 23/40/65 cm layouts; seed changes do not create new scenes",
+  "evidence": "results\\persistent_pick_place"
+}

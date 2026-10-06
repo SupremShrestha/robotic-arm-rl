@@ -1,0 +1,134 @@
+{
+  "model": "outputs\\pick_place_varied_v3\\round_0.zip",
+  "sha256": "05a84888d8814dcdab188bc8c0fb3c12fe63662a9deeb2b246b543c050c046e0",
+  "environment_profile": "quarter_turn_v2",
+  "observation_schema": 32,
+  "max_episode_steps": 500,
+  "extended_suite": true,
+  "varied_layouts": true,
+  "seed": 32000,
+  "cases": {
+    "reference": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.007287768363750374
+    },
+    "light": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.008845592283439122
+    },
+    "heavy": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.010850512304117422
+    },
+    "slippery": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.006517846814590566
+    },
+    "small": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.010318344097325245
+    },
+    "large": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.005399810375740082
+    },
+    "cylinder": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.014955639189777981
+    },
+    "low_obstacle": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.018088817148909104
+    },
+    "blocking_obstacle": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.02235002973188118
+    },
+    "heavy_slippery": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.005357889176735509
+    },
+    "large_blocking_obstacle": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.014466744030431196
+    },
+    "cylinder_blocking_obstacle": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.006633815056838216
+    },
+    "wide_left": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.019806774512316792
+    },
+    "wide_right": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.016947922331156388
+    },
+    "rotated_small_box": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.0157018245148677
+    },
+    "rotated_large_box": {
+      "episodes": 2,
+      "successes": 0,
+      "collision_free_successes": 0,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.3401325462574055
+    },
+    "shifted_obstacle": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.016449030352713362
+    }
+  },
+  "episodes": 34,
+  "successes": 32,
+  "scope": "Finite stress test; paired target seeds across conditions. No camera noise or hardware; two simple upright geometries; obstacle contact is distinct from placement success."
+}

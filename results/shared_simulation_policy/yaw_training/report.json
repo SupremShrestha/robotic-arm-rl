@@ -1,0 +1,65 @@
+{
+  "method": "balanced behavior cloning across saved datasets; no PPO",
+  "source": "outputs\\shared_simulation_policy\\candidate.zip",
+  "datasets": [
+    "results\\scene_generalization\\training\\demonstrations.npz",
+    "results\\diagonal_pick_place\\training\\demonstrations.npz",
+    "results\\distance_pick_place\\training\\demonstrations.npz",
+    "results\\persistent_pick_place\\training\\demonstrations.npz"
+  ],
+  "samples_per_dataset": 6000,
+  "yaw_refinement_demonstrations": [
+    {
+      "options": {
+        "size": 0.06,
+        "object_yaw": 0.4
+      },
+      "successes": 5,
+      "episodes": 5
+    },
+    {
+      "options": {
+        "size": 0.06,
+        "object_yaw": 0.785398
+      },
+      "successes": 5,
+      "episodes": 5
+    },
+    {
+      "options": {
+        "size": 0.06,
+        "object_yaw": 1.2
+      },
+      "successes": 5,
+      "episodes": 5
+    },
+    {
+      "options": {
+        "size": 0.06,
+        "object_yaw": -0.785398
+      },
+      "successes": 5,
+      "episodes": 5
+    },
+    {
+      "options": {
+        "size": 0.06,
+        "obstacle_height": 0.24
+      },
+      "successes": 5,
+      "episodes": 5
+    },
+    {
+      "options": {
+        "object_shape": "cylinder",
+        "obstacle_height": 0.24
+      },
+      "successes": 5,
+      "episodes": 5
+    }
+  ],
+  "seed": 49000,
+  "epochs": 100,
+  "loss": 0.0003313062188681215,
+  "selection": "Candidate only; requires independent evaluation"
+}

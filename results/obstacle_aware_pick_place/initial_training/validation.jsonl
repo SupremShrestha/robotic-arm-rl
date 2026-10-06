@@ -1,0 +1,2 @@
+{"timesteps": 0, "success_rate": 0.8, "mean_max_held_height_m": 0.165786962899393, "mean_reward": 71.13550802822371, "reward_version": 3}
+{"timesteps": 1024, "success_rate": 0.5, "mean_max_held_height_m": 0.15432607520194683, "mean_reward": 43.060855262703235, "reward_version": 3}

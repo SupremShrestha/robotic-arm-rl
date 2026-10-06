@@ -1,0 +1,59 @@
+{
+  "controller": "ppo_panda",
+  "stage": "place",
+  "episodes": 3,
+  "seed": 622849,
+  "environment_profile": "quarter_turn_v2",
+  "observation_schema": 32,
+  "max_episode_steps": 500,
+  "three_tasks": true,
+  "random_layouts": true,
+  "task_positions": [
+    [
+      [
+        0.5004507849347752,
+        -0.17852964932900964
+      ],
+      [
+        0.353600127055324,
+        0.16246208810819288
+      ]
+    ],
+    [
+      [
+        0.39271392728252086,
+        -0.17785281793772742
+      ],
+      [
+        0.5456578177408785,
+        0.1681217231888888
+      ]
+    ],
+    [
+      [
+        0.5232567712894529,
+        -0.14340095619013246
+      ],
+      [
+        0.39745506691729626,
+        0.24092986812401998
+      ]
+    ]
+  ],
+  "scene_options": {},
+  "domain_randomization": false,
+  "scene_randomization": false,
+  "randomized_positions": true,
+  "start_near_cube": false,
+  "reward_version": 3,
+  "model": "models\\panda_varied_scene_policy.zip",
+  "model_sha256": "05a84888d8814dcdab188bc8c0fb3c12fe63662a9deeb2b246b543c050c046e0",
+  "successes": 2,
+  "success_rate": 0.6666666666666666,
+  "collision_free_success_rate": 0.6666666666666666,
+  "obstacle_contact_episodes": 0,
+  "grasp_rate": 0.6666666666666666,
+  "lift_rate": 0.6666666666666666,
+  "release_rate": 1.0,
+  "mean_placement_error_m": 0.14631123716935834
+}

@@ -1,0 +1,134 @@
+{
+  "model": "models\\panda_obstacle_policy_v2.zip",
+  "sha256": "9315bde0d67d89edb41e2e7324ee686fe0d9bf2d060ccd71bba123646610835c",
+  "environment_profile": "quarter_turn_v2",
+  "observation_schema": 32,
+  "max_episode_steps": 500,
+  "extended_suite": true,
+  "varied_layouts": true,
+  "seed": 32000,
+  "cases": {
+    "reference": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.0066157473649656705
+    },
+    "light": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.006838303020945527
+    },
+    "heavy": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.011405221552032198
+    },
+    "slippery": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.009732626771404199
+    },
+    "small": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.012583523037594257
+    },
+    "large": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.0065909912550066166
+    },
+    "cylinder": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.007843016250061063
+    },
+    "low_obstacle": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.01248065122195488
+    },
+    "blocking_obstacle": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.015423568511834605
+    },
+    "heavy_slippery": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.011262985669353721
+    },
+    "large_blocking_obstacle": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.003345256458968833
+    },
+    "cylinder_blocking_obstacle": {
+      "episodes": 2,
+      "successes": 0,
+      "collision_free_successes": 0,
+      "obstacle_contact_episodes": 2,
+      "mean_placement_error_m": 0.09910621878520326
+    },
+    "wide_left": {
+      "episodes": 2,
+      "successes": 0,
+      "collision_free_successes": 0,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.4704252846359763
+    },
+    "wide_right": {
+      "episodes": 2,
+      "successes": 0,
+      "collision_free_successes": 0,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.4401135344611334
+    },
+    "rotated_small_box": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.01414457873732404
+    },
+    "rotated_large_box": {
+      "episodes": 2,
+      "successes": 0,
+      "collision_free_successes": 0,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.3461722896710331
+    },
+    "shifted_obstacle": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.01189351468653805
+    }
+  },
+  "episodes": 34,
+  "successes": 26,
+  "scope": "Finite stress test; paired target seeds across conditions. No camera noise or hardware; two simple upright geometries; obstacle contact is distinct from placement success."
+}

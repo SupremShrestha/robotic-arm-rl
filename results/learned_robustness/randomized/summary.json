@@ -1,0 +1,80 @@
+{
+  "model": "outputs\\pick_place_randomized_scaled\\final_model.zip",
+  "sha256": "a16a94daf8881c83fcff66d992300ad75653ff1723e34a7253661ea705f7a9a8",
+  "seed": 8000,
+  "cases": {
+    "reference": {
+      "episodes": 3,
+      "successes": 3,
+      "collision_free_successes": 3,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.006425225899791202
+    },
+    "light": {
+      "episodes": 3,
+      "successes": 3,
+      "collision_free_successes": 3,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.006576534175316194
+    },
+    "heavy": {
+      "episodes": 3,
+      "successes": 3,
+      "collision_free_successes": 3,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.007422716322447501
+    },
+    "slippery": {
+      "episodes": 3,
+      "successes": 3,
+      "collision_free_successes": 3,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.005942380778509865
+    },
+    "small": {
+      "episodes": 3,
+      "successes": 3,
+      "collision_free_successes": 3,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.00851627829353256
+    },
+    "large": {
+      "episodes": 3,
+      "successes": 1,
+      "collision_free_successes": 1,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.006846095956461621
+    },
+    "cylinder": {
+      "episodes": 3,
+      "successes": 3,
+      "collision_free_successes": 3,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.006951105444854719
+    },
+    "low_obstacle": {
+      "episodes": 3,
+      "successes": 3,
+      "collision_free_successes": 3,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.006425225899791202
+    },
+    "blocking_obstacle": {
+      "episodes": 3,
+      "successes": 1,
+      "collision_free_successes": 0,
+      "obstacle_contact_episodes": 3,
+      "mean_placement_error_m": 0.22734875156664516
+    },
+    "heavy_slippery": {
+      "episodes": 3,
+      "successes": 3,
+      "collision_free_successes": 3,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.0034368892932110273
+    }
+  },
+  "episodes": 30,
+  "successes": 26,
+  "scope": "Finite stress test; paired target seeds across conditions. No camera noise or hardware; two simple upright geometries; obstacle contact is distinct from placement success."
+}

@@ -1,0 +1,12 @@
+{
+  "selected_run": "results/reward_comparison/legacy_19/run",
+  "rule": "Choose legacy reward after exploratory ablation; choose legacy seed checkpoint by validation success, tie-break mean distance. Final unseen target set starts at seed 2000.",
+  "validation": {
+    "timesteps": 500000,
+    "success_rate": 0.8,
+    "mean_distance_m": 0.09651095346425756,
+    "mean_reward": -25.274416390574196
+  },
+  "original_run_path": "reports\\ablation_full\\legacy_19",
+  "checkpoint": "models/reaching_policy.zip"
+}

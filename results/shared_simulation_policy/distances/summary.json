@@ -1,0 +1,59 @@
+{
+  "controller": "ppo_panda",
+  "stage": "place",
+  "episodes": 3,
+  "seed": 2000,
+  "environment_profile": "yaw_aligned_v3",
+  "observation_schema": 32,
+  "max_episode_steps": 500,
+  "three_tasks": true,
+  "random_layouts": false,
+  "task_positions": [
+    [
+      [
+        0.45,
+        -0.1
+      ],
+      [
+        0.45,
+        0.13
+      ]
+    ],
+    [
+      [
+        0.51,
+        -0.18
+      ],
+      [
+        0.39,
+        0.20157568056677827
+      ]
+    ],
+    [
+      [
+        0.3,
+        -0.3
+      ],
+      [
+        0.55,
+        0.3
+      ]
+    ]
+  ],
+  "scene_options": {},
+  "domain_randomization": false,
+  "scene_randomization": false,
+  "randomized_positions": true,
+  "start_near_cube": false,
+  "reward_version": 3,
+  "model": "outputs\\shared_complete_simulation_policy\\candidate.zip",
+  "model_sha256": "aba0830b49e833ada8687df0e2ae0ad63baa7ad4e9aa73fe48cc2f6e086eb511",
+  "successes": 3,
+  "success_rate": 1.0,
+  "collision_free_success_rate": 1.0,
+  "obstacle_contact_episodes": 0,
+  "grasp_rate": 1.0,
+  "lift_rate": 1.0,
+  "release_rate": 1.0,
+  "mean_placement_error_m": 0.014454102872460161
+}

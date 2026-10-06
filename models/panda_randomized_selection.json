@@ -1,0 +1,12 @@
+{
+  "method": "domain randomized behavior cloning + DAgger + PPO",
+  "checkpoint": "models\\panda_randomized_policy.zip",
+  "sha256": "a16a94daf8881c83fcff66d992300ad75653ff1723e34a7253661ea705f7a9a8",
+  "stage": "place",
+  "input_scaling": "saved in checkpoint",
+  "training_evidence": "results/learned_robustness/training",
+  "evaluation": "results/learned_robustness/randomized",
+  "collision_free_successes": 25,
+  "episodes": 30,
+  "limits": "Large objects remain inconsistent; blocking obstacles caused contact on all tested scenes. No general obstacle avoidance or hardware validation."
+}

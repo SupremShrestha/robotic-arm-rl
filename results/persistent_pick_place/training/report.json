@@ -1,0 +1,13 @@
+{
+  "method": "behavior cloning with optional mixed teacher/learner state aggregation, no new PPO",
+  "source": "models\\panda_distance_policy.zip",
+  "history": [
+    {
+      "round": 0,
+      "loss": 0.0002101729332935065,
+      "tasks_completed": 3,
+      "samples": 680
+    }
+  ],
+  "scope": "Same fixed three-object scene; seeds do not change these object positions."
+}

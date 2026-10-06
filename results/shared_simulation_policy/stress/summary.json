@@ -1,0 +1,134 @@
+{
+  "model": "outputs\\shared_complete_simulation_policy\\candidate.zip",
+  "sha256": "aba0830b49e833ada8687df0e2ae0ad63baa7ad4e9aa73fe48cc2f6e086eb511",
+  "environment_profile": "yaw_aligned_v3",
+  "observation_schema": 32,
+  "max_episode_steps": 500,
+  "extended_suite": true,
+  "varied_layouts": true,
+  "seed": 56000,
+  "cases": {
+    "reference": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.005274104918603915
+    },
+    "light": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.005674006027721843
+    },
+    "heavy": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.010537978434332303
+    },
+    "slippery": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.008327326508696194
+    },
+    "small": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.014255377972330275
+    },
+    "large": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.01146983160196539
+    },
+    "cylinder": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.011560435440911569
+    },
+    "low_obstacle": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.020690632302930514
+    },
+    "blocking_obstacle": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.007695719406686098
+    },
+    "heavy_slippery": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.006009879051511246
+    },
+    "large_blocking_obstacle": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.009779005779277912
+    },
+    "cylinder_blocking_obstacle": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.019700329677356278
+    },
+    "wide_left": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.011594069544055821
+    },
+    "wide_right": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.012610440764060076
+    },
+    "rotated_small_box": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.015508437471014602
+    },
+    "rotated_large_box": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.007749671284202555
+    },
+    "shifted_obstacle": {
+      "episodes": 2,
+      "successes": 2,
+      "collision_free_successes": 2,
+      "obstacle_contact_episodes": 0,
+      "mean_placement_error_m": 0.01300925517461522
+    }
+  },
+  "episodes": 34,
+  "successes": 34,
+  "scope": "Finite stress test; paired target seeds across conditions. No camera noise or hardware; two simple upright geometries; obstacle contact is distinct from placement success."
+}
